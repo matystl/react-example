@@ -6,7 +6,7 @@ void main() {
   react.setServerConfiguration();
   var l = [1,2,3];
   //this is ok
-  var c1 = div({}, l.map((i) => div({},'$i')).toList());
+  var c1 = div({}, l.map((i) => div({'style':{'background-color':'blue'}},'$i')).toList());
   print(renderComponentToString(c1));
   print('string and lists works');
   //intigers dont work
